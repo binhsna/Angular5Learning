@@ -1,0 +1,13 @@
+
+-- Kiểm tra phiên bản nodejs
+node -v
+-- Cài đặt TypeScript
+npm install -g typescript
+-- Kiểm tra phiên bản TypeScript
+tsc -v
+-- Cài đặt angular
+npm install -g @angular/cli
+-- Tạo mới dự án
+ng new ten_project
+-- Chạy dự án
+ng serve --open --port 4200
