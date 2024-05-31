@@ -2,3 +2,19 @@
 <div><span>Id: </span>{{movie.id}}</div>
 <div><span>Name: </span>{{movie.name | uppercase}}</div>
 <div><span>Release Year: </span>{{movie.releaseYear}}</div>
+<div style="margin: 10px; text-align: left">
+  <label>Movie name (Data-binding one-way);
+    <input [ngModel]="movie.name" placeholder="Enter movie's name">
+  </label>
+</div>
+<div style="margin: 10px; text-align: left">
+  <label>Release year: (Data-binding two-way);
+    <input [(ngModel)]="movie.releaseYear" placeholder="Enter release year">
+  </label>
+</div>
+<h2>My favorite movies</h2>
+<ol class="movies">
+  <li class="movieListItem" *ngFor="let eachMovie of movies">
+    {{eachMovie.name}} - {{eachMovie.releaseYear}}
+  </li>
+</ol>
