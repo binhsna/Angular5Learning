@@ -11,3 +11,5 @@ npm install -g @angular/cli
 ng new ten_project
 -- Chạy dự án
 ng serve --open --port 4200
+-- Tạo mới 1 component
+ng generate component movies
