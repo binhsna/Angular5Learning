@@ -3,6 +3,7 @@ import {Movie} from "../models/movie";
 import {NgForOf, NgIf, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {fakeMovies} from "../fake-movies";
+import {MovieDetailComponent} from "../movie-detail/movie-detail.component";
 
 @Component({
   selector: 'app-movies',
@@ -11,7 +12,8 @@ import {fakeMovies} from "../fake-movies";
     UpperCasePipe,
     FormsModule,
     NgForOf,
-    NgIf
+    NgIf,
+    MovieDetailComponent
   ],
   templateUrl: './movies.component.html',
   styleUrl: './movies.component.css'
