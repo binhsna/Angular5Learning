@@ -33,7 +33,13 @@ export class MoviesComponent implements OnInit {
   }
 
   getMoviesFromServices(): void {
-    this.movies = this.movieService.getMovies();
+    // this.movies = this.movieService.getMovies();
+    this.movieService.getMovies().subscribe(
+      (updateMovies) => {
+        this.movies = updateMovies;
+        console.log(`this.movies = ${JSON.stringify(this.movies)}`);
+      }
+    );
   }
 
   ngOnInit() {
