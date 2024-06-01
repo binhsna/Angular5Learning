@@ -13,3 +13,6 @@ ng new ten_project
 ng serve --open --port 4200
 -- Tạo mới 1 component
 ng generate component movies
+-- Tạo mới 1 service
+ng generate service movie
+--
