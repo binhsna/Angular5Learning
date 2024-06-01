@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Movie} from "../models/movie";
-import {NgForOf, UpperCasePipe} from "@angular/common";
+import {NgForOf, NgIf, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {fakeMovies} from "../fake-movies";
 
@@ -10,7 +10,8 @@ import {fakeMovies} from "../fake-movies";
   imports: [
     UpperCasePipe,
     FormsModule,
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './movies.component.html',
   styleUrl: './movies.component.css'
