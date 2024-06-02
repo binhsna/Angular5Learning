@@ -23,6 +23,10 @@ ng new ten_project
 ng serve --open --port 4200
 -- Tạo mới 1 component
 ng generate component movies
--- Tạo mới 1 service
-ng generate service movie
+-- Tạo mới 1 service và tự thêm vào folder/module app
+ng generate service movie --module=app
+-- Tạo routes và RouterOutlet
+ng generate module app-routing --flat --module=app
 --
+
+

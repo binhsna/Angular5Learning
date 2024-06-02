@@ -1,10 +1,19 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+// import {CommonModule} from "@angular/common";
+import {RouterModule, Routes} from '@angular/router';
+import {MoviesComponent} from "./movies/movies.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'movies', component: MoviesComponent}
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    // CommonModule
+    RouterModule.forRoot(routes) // --> Khởi chạy đầu tiên khi app run
+  ],
+  // declarations: []
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
