@@ -1,3 +1,4 @@
+<!--
 <h1>Movie's detail: </h1>
 <div><span>Id: </span>{{movie.id}}</div>
 <div><span>Name: </span>{{movie.name | uppercase}}</div>
@@ -12,14 +13,17 @@
     <input [(ngModel)]="movie.releaseYear" placeholder="Enter release year">
   </label>
 </div>
+-->
+
 <h2>My favorite movies</h2>
 <div class="parent">
   <ol class="movies">
     <li class="movieListItem" *ngFor="let eachMovie of movies"
-        [class.selected]="eachMovie === selectedMovie"
-        (click)="onSelect(eachMovie)">
-      {{eachMovie.name}} - {{eachMovie.releaseYear}}
+        style="list-style-type: none;">
+      <a routerLink="/detail/{{eachMovie.id}}" style="text-decoration: none;">
+        {{eachMovie.name}} - {{eachMovie.releaseYear}}
+      </a>
     </li>
   </ol>
-  <app-movie-detail [movie]="selectedMovie"></app-movie-detail>
+  <!--<app-movie-detail [movie]="selectedMovie"></app-movie-detail>-->
 </div>

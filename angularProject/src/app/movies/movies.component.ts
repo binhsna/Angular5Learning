@@ -8,11 +8,11 @@ import {MovieService} from "../movie.service";
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  movie: Movie = {
-    id: 1,
-    name: "star wars",
-    releaseYear: 1977
-  }
+  /* movie: Movie = {
+     id: 1,
+     name: "star wars",
+     releaseYear: 1977
+   }*/
   // movies = fakeMovies;
   movies!: Movie[];
 
@@ -35,10 +35,9 @@ export class MoviesComponent implements OnInit {
   }
 
   // Action when select a Movie in List items
-  selectedMovie!: Movie;
-
-  onSelect(movie: Movie): void {
-    this.selectedMovie = movie;
-    console.log(`selectMovie = ${JSON.stringify(this.selectedMovie)}`);
-  }
+  /* selectedMovie!: Movie;
+   onSelect(movie: Movie): void {
+     this.selectedMovie = movie;
+     console.log(`selectMovie = ${JSON.stringify(this.selectedMovie)}`);
+   }*/
 }
