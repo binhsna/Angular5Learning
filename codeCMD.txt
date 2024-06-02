@@ -27,6 +27,15 @@ ng generate component movies
 ng generate service movie --module=app
 -- Tạo routes và RouterOutlet
 ng generate module app-routing --flat --module=app
+-- Tạo 1 file bằng cmd
+echo. > filename.txt
+type nul > filename.txt
+-- Cài json-server -> Tạo ra một API REST giả lập chỉ bằng một file JSON
+npm install -g json-server
+-- Khởi chạy server với hostname và cổng 3000
+json-server -w db.json -p 3000
+-- Lấy hostname của máy
+hostname
 --
 
 
