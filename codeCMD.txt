@@ -1,4 +1,5 @@
 
+
 -- Kiểm tra phiên bản nodejs
 node -v
 -- Cài đặt TypeScript
@@ -7,6 +8,15 @@ npm install -g typescript
 tsc -v
 -- Cài đặt angular
 npm install -g @angular/cli
+---
+npm i @angular/cli@16.2.14
+-- Xóa
+npm uninstall -g @angular/cli
+--- Kiểm tra phiên bản angular
+ng version
+-- Đường dẫn lưu trữ angular
+C:\Users\Daica\node_modules\@angular\cli
+C:\Users\Daica\AppData\Roaming\npm\node_modules\@angular\cli
 -- Tạo mới dự án
 ng new ten_project
 -- Chạy dự án

@@ -1,23 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {Movie} from "../models/movie";
-import {NgForOf, NgIf, UpperCasePipe} from "@angular/common";
-import {FormsModule} from "@angular/forms";
-import {fakeMovies} from "../fake-movies";
-import {MovieDetailComponent} from "../movie-detail/movie-detail.component";
 import {MovieService} from "../movie.service";
 
 @Component({
   selector: 'app-movies',
-  standalone: true,
-  imports: [
-    UpperCasePipe,
-    FormsModule,
-    NgForOf,
-    NgIf,
-    MovieDetailComponent
-  ],
   templateUrl: './movies.component.html',
-  styleUrl: './movies.component.css'
+  styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
   movie: Movie = {

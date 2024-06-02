@@ -1,9 +1,7 @@
 import {Injectable} from '@angular/core';
-import {fakeMovies} from "./fake-movies";
-import {Movie} from "./models/movie";
-
-// Get data asynchronously with Observable
 import {Observable, of} from "rxjs";
+import {Movie} from "./models/movie";
+import {fakeMovies} from "./fake-movies";
 
 @Injectable({
   providedIn: 'root'
