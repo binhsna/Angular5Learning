@@ -6,9 +6,9 @@
       "releaseYear": 1996
     },
     {
+      "id": "2",
       "releaseYear": "2009",
-      "name": "A Christmas Carol",
-      "id": "2"
+      "name": "A Christmas Carol"
     },
     {
       "id": "3",
@@ -109,11 +109,6 @@
       "id": "22",
       "name": "The Amityville Horror",
       "releaseYear": 1979
-    },
-    {
-      "id": "e7b4",
-      "name": "Test Add",
-      "releaseYear": 2024
     }
   ],
   "comments": [

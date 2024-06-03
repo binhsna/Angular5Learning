@@ -53,6 +53,15 @@ export class MovieService {
     );
   }
 
+  /** DELETE: Delete the movie from server */
+  deleteMovie(movieId: number): Observable<Movie | null> {
+    const url = `${this.moviesURL}/${movieId}`;
+    return this.http.delete<Movie>(url, httpOptions).pipe(
+      tap(() => console.log(`deleted movie with id = ${movieId}`)),
+      catchError(error => of(null))
+    );
+  }
+
   constructor(
     private http: HttpClient,
     public messageService: MessageService) {

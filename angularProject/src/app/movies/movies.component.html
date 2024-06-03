@@ -44,6 +44,10 @@
       <a routerLink="/detail/{{eachMovie.id}}" style="text-decoration: none;">
         {{eachMovie.name}} - {{eachMovie.releaseYear}}
       </a>
+      <button title="Delete movie"
+              (click)="delete(eachMovie.id)">
+        X
+      </button>
     </li>
   </ol>
   <!--<app-movie-detail [movie]="selectedMovie"></app-movie-detail>-->

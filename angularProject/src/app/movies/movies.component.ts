@@ -57,4 +57,12 @@ export class MoviesComponent implements OnInit {
         });
     }
   }
+
+  delete(movieId: number): void {
+    this.movieService.deleteMovie(movieId)
+      .subscribe(
+        () => {
+          this.movies = this.movies.filter(eachMovie => eachMovie.id !== movieId);
+        });
+  }
 }
