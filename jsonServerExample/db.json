@@ -12,8 +12,8 @@
     },
     {
       "id": "3",
-      "name": "Star Wars new",
-      "releaseYear": "1978"
+      "name": "Star Wars",
+      "releaseYear": "1977"
     },
     {
       "id": "4",
@@ -109,6 +109,11 @@
       "id": "22",
       "name": "The Amityville Horror",
       "releaseYear": 1979
+    },
+    {
+      "id": "e7b4",
+      "name": "Test Add",
+      "releaseYear": 2024
     }
   ],
   "comments": [

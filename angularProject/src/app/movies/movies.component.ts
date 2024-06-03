@@ -40,4 +40,21 @@ export class MoviesComponent implements OnInit {
      this.selectedMovie = movie;
      console.log(`selectMovie = ${JSON.stringify(this.selectedMovie)}`);
    }*/
+
+  // Add new movie
+  add(name: string, releaseYear: string): void {
+    name = name.trim();
+    if (Number.isNaN(Number(releaseYear)) || !name || Number(releaseYear) === 0) {
+      alert('Name must not be blank, Release year must be a number!');
+      return;
+    } else {
+      const newMovie: Movie = new Movie();
+      newMovie.name = name;
+      newMovie.releaseYear = Number(releaseYear);
+      this.movieService.addMovie(newMovie)
+        .subscribe(insertMovie => {
+          this.movies.push(insertMovie);
+        });
+    }
+  }
 }
