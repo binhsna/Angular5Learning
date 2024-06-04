@@ -39,6 +39,12 @@ npm i -g json-server@0.17.4
 json-server -w db.json -p 3000
 -- Lấy hostname của máy
 hostname
+-- Tạo class
+ng generate class Employee
+-- 
+
+
 --
+
 
 

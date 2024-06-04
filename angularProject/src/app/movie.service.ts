@@ -17,6 +17,7 @@ const httpOptions = {
 })
 export class MovieService {
     // desktop-pl31r75 -> hostname | localhost
+    // json-server version 0.17.4
     private moviesURL = 'http://localhost:3000/movies';
 
     getMovies(): Observable<Movie[]> {
