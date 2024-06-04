@@ -31,7 +31,10 @@ ng generate module app-routing --flat --module=app
 echo. > filename.txt
 type nul > filename.txt
 -- Cài json-server -> Tạo ra một API REST giả lập chỉ bằng một file JSON
+-- Các phiên bản mới nhất của json-server không có "_like" .
 npm install -g json-server
+-- Fix lỗi không sử dụng được name_like
+npm i -g json-server@0.17.4
 -- Khởi chạy server với hostname và cổng 3000
 json-server -w db.json -p 3000
 -- Lấy hostname của máy
